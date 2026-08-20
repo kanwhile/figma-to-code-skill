@@ -3,7 +3,7 @@ name: figma-to-code
 description: Turn a Figma frame into code in whatever project you are in — learns that project's own tokens, component library, and routing before writing anything, diffs the frame against code that already exists, and holds every value to a token instead of an arbitrary hex. Use when a task supplies a Figma node, frame, link, or design screenshot, or asks to build, redesign, or check a screen against a design.
 ---
 
-# Figma → code
+# Figma to code
 
 <what-to-do>
 
@@ -18,7 +18,7 @@ No MCP available? Work from an exported screenshot plus the measurements you ask
 Read the project's agent memory first — `AGENTS.md`, `CLAUDE.md`, or whatever it keeps. If the answers are already written down, use them; do not re-derive.
 Whatever is missing, discover it with [references/discover-project.md](references/discover-project.md), then **state the profile out loud** before building:
 
-> framework / router · token source · component library + catalog · icon set · run command + port · verify commands
+> framework and router, token source, component library and catalog, icon set, run command and port, verify commands
 
 In a monorepo, resolve that profile **per app or package** — siblings routinely disagree about radius scales, icon sets, and even routers.
 Then inventory what exists. Most frames are mostly assembly of components already built.
@@ -37,7 +37,7 @@ Post the profile, the three buckets, and the token mapping you intend to use —
 
 **5 — Build, then verify.**
 Follow the house patterns you found in move 2; never hand-roll a page shell the project already owns. Cite the Figma node id in a comment above each non-obvious block, so the next person can re-diff.
-Then run the ladder in [references/verify.md](references/verify.md): static checks → run it → browser pass beside the frame.
+Then run the ladder in [references/verify.md](references/verify.md): static checks, then the app, then a browser pass beside the frame.
 
 </what-to-do>
 

@@ -25,7 +25,7 @@ For every colour, radius, spacing, font size, and shadow in the frame:
 3. **Framework's own scale** — many "arbitrary-looking" values are stock. `#FAFAFA` is Tailwind's `neutral-50`;
    `0.5rem` is `2` on the default spacing scale. **Confirm by grepping the class in the codebase** — if the project
    already uses it, you have your answer.
-4. **Nothing matches → stop and ask.** Do not introduce an arbitrary value to keep moving. This is the branch that
+4. **Nothing matches: stop and ask.** Do not introduce an arbitrary value to keep moving. This is the branch that
    protects the design system; taking it silently is how a token system dies.
 
 Report the **name** in move 4 — `bg-neutral-50`, `rounded-sm`, `text-muted-foreground` — never the raw value. The
@@ -34,7 +34,7 @@ value lives in the token file; repeating it in a report, a comment, or a doc cre
 ## Traps, in the order they bite
 
 **Scales get overridden.** A project can pin one step off its own `calc()` chain to match a frame, or replace the
-whole type scale to match a native app's design system. Mapping "12px → the `xl` step" from habit is wrong whenever
+whole type scale to match a native app's design system. Mapping "12px to the `xl` step" from habit is wrong whenever
 that happened. Read the scale definition every time.
 
 **Monorepos disagree with themselves.** Radius, icon set, and even the router can differ between sibling apps, and a

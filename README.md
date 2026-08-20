@@ -22,11 +22,11 @@ Add `-g` to install for all projects. Then hand it a Figma link in your own word
 
 | Move | What happens |
 |---|---|
-| **1 · Pull** | Fetch the frame (`fileKey` + `nodeId`). No MCP? Work from an exported screenshot — and say so, because a screenshot cannot report Auto Layout gaps. |
-| **2 · Learn the project** | Read `AGENTS.md`/`CLAUDE.md` first, then discover whatever is missing: token source, component catalog, router, icon set, run and verify commands. State the profile out loud. |
-| **3 · Diff** | Find the existing screen, compare block by block, and sort every difference into **matches** / **delta** / **new**. |
-| **4 · Stop** | Report the profile, the three buckets, and the intended token mapping. Wait. No edits before the reply. |
-| **5 · Build + verify** | Follow the house patterns, cite node ids in comments, then run static checks → the app → a browser pass beside the frame. |
+| **1. Pull** | Fetch the frame (`fileKey` + `nodeId`). No MCP? Work from an exported screenshot — and say so, because a screenshot cannot report Auto Layout gaps. |
+| **2. Learn the project** | Read `AGENTS.md`/`CLAUDE.md` first, then discover whatever is missing: token source, component catalog, router, icon set, run and verify commands. State the profile out loud. |
+| **3. Diff** | Find the existing screen, compare block by block, and sort every difference into **matches** / **delta** / **new**. |
+| **4. Stop** | Report the profile, the three buckets, and the intended token mapping. Wait. No edits before the reply. |
+| **5. Build and verify** | Follow the house patterns, cite node ids in comments, then run the static checks, start the app, and do a browser pass beside the frame. |
 
 Move 3 is the one that pays for itself. Frames are usually 80% components that already exist, and a node that is already built means the job is *adjust*, not rebuild.
 
@@ -52,12 +52,12 @@ skills/figma-to-code/
 ├── references/
 │   ├── discover-project.md           six questions + recipes for answering them in any stack
 │   ├── token-discipline.md           the remap ladder and the traps that break it
-│   └── verify.md                     static checks → run it → browser pass → compare
+│   └── verify.md                     static checks, run it, browser pass, compare
 └── scripts/
     └── check-arbitrary-values.sh     flags arbitrary Tailwind and inline hex in changed files
 ```
 
-`discover-project.md` is what makes the skill portable: token sources (Tailwind v4 `@theme`, v3 config, shadcn `components.json`, plain CSS variables, `theme.ts`, `tokens.json`, native), component catalogs (Storybook, Ladle, Histoire, in-app `/ds` routes), a URL→file table covering six routers, icon sets, and the project's own run and verify commands. "This project has no token layer" is treated as a valid answer that ends in a question, not in a silently-invented system.
+`discover-project.md` is what makes the skill portable: token sources (Tailwind v4 `@theme`, v3 config, shadcn `components.json`, plain CSS variables, `theme.ts`, `tokens.json`, native), component catalogs (Storybook, Ladle, Histoire, in-app `/ds` routes), a URL-to-file table covering six routers, icon sets, and the project's own run and verify commands. "This project has no token layer" is treated as a valid answer that ends in a question, not in a silently-invented system.
 
 ## Notes
 

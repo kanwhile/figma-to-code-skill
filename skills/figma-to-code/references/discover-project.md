@@ -63,7 +63,7 @@ find . -maxdepth 4 -type d \( -path "*/components/ui" -o -name "ui" -o -name "de
   -not -path "*/node_modules/*" 2>/dev/null | head
 ```
 
-Note the layering convention too (primitives → composites → feature blocks → layouts, or whatever this project uses).
+Note the layering convention too (primitives, then composites, then feature blocks, then layouts, or whatever this project uses).
 Building at the wrong layer is the most common review comment on this kind of work.
 
 ## 3. How do I get from a URL to the file that renders it?
@@ -119,7 +119,7 @@ lines, pointing at files rather than restating their contents:
 - components: `src/components/{ui,composite,feature,layout}`; live catalog at `/ds`
 - routing: TanStack file-based under `src/routes/`; `_private` is a pathless layout
 - icons: hugeicons (stroke); `packages/ui` uses lucide — match the package you edit
-- run: `pnpm --filter @app/web dev` → :3002 · check: `typecheck`, `lint`, `e2e`
+- run: `pnpm --filter @app/web dev` on port 3002; check with `typecheck`, `lint`, `e2e`
 - patterns doc: `design/UI-PATTERNS.md` (source files win where it disagrees)
 ```
 
