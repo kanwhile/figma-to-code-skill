@@ -26,13 +26,13 @@ Then inventory what exists. Most frames are mostly assembly of components alread
 **3 — Diff the frame against the code that exists.**
 Locate the current screen first (routing rules in `discover-project.md`), then compare block by block and sort every difference:
 
-- ✅ **matches** — leave it alone
-- 🔀 **delta** — built, but differs from the frame
-- 🆕 **new** — nothing exists yet
+- **matches** — leave it alone
+- **delta** — built, but differs from the frame
+- **new** — nothing exists yet
 
 If it is already built, the job is *adjust*, not rebuild. Say so rather than starting over.
 
-**4 — 🛑 Stop and report.**
+**4 — Stop and report.**
 Post the profile, the three buckets, and the token mapping you intend to use — names, per [references/token-discipline.md](references/token-discipline.md) — then wait. No edits before that reply.
 
 **5 — Build, then verify.**

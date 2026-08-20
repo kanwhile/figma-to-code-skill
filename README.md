@@ -24,8 +24,8 @@ Add `-g` to install for all projects. Then hand it a Figma link in your own word
 |---|---|
 | **1 · Pull** | Fetch the frame (`fileKey` + `nodeId`). No MCP? Work from an exported screenshot — and say so, because a screenshot cannot report Auto Layout gaps. |
 | **2 · Learn the project** | Read `AGENTS.md`/`CLAUDE.md` first, then discover whatever is missing: token source, component catalog, router, icon set, run and verify commands. State the profile out loud. |
-| **3 · Diff** | Find the existing screen, compare block by block, and sort every difference into ✅ matches · 🔀 delta · 🆕 new. |
-| **4 · 🛑 Stop** | Report the profile, the three buckets, and the intended token mapping. Wait. No edits before the reply. |
+| **3 · Diff** | Find the existing screen, compare block by block, and sort every difference into **matches** / **delta** / **new**. |
+| **4 · Stop** | Report the profile, the three buckets, and the intended token mapping. Wait. No edits before the reply. |
 | **5 · Build + verify** | Follow the house patterns, cite node ids in comments, then run static checks → the app → a browser pass beside the frame. |
 
 Move 3 is the one that pays for itself. Frames are usually 80% components that already exist, and a node that is already built means the job is *adjust*, not rebuild.
